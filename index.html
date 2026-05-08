@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jessica MacFarquhar | Research</title>
+    <title>Jessica MacFarquhar | Home</title>
 
     <style>
         body {
@@ -17,14 +17,25 @@
             background-image: url('website-banner.jpg');
             background-size: cover;
             background-position: center;
-            color: white;
             text-align: center;
             padding: 120px 20px;
         }
 
-        header h1 {
-            font-size: 3em;
+        .name {
+            font-size: 3.5em;
+            color: #003366;
             margin-bottom: 10px;
+        }
+
+        .university {
+            font-size: 1.5em;
+            color: white;
+            margin-bottom: 8px;
+        }
+
+        .role {
+            font-size: 1.1em;
+            color: white;
         }
 
         nav {
@@ -60,7 +71,10 @@
 
         .about img {
             width: 220px;
-            border-radius: 10px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #003366;
         }
 
         footer {
@@ -69,72 +83,34 @@
             padding: 20px;
             color: #666;
         }
-
-        .background-upload-label,
-        #background-upload {
-            display: block;
-            margin: 20px auto 0;
-            color: white;
-            font-size: 0.95rem;
-            text-align: center;
-        }
-
-        #background-upload {
-            background: rgba(255,255,255,0.85);
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            padding: 8px;
-            width: fit-content;
-            max-width: 90%;
-            cursor: pointer;
-        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Jessica MacFarquhar</h1>
-    <p>Swansea University</p>
-    <h2>PhD Student in Glaciology and Geophysics</h2>
+    <div class="name">Jessica MacFarquhar</div>
+    <div class="university">Swansea University</div>
+    <div class="role">PhD Student in Glaciology and Geophysics</div>
 </header>
 
 <nav>
-    <a href="#about">About</a>
-    <a href="#research">Research</a>
-    <a href="#publications">Publications</a>
-    <a href="#contact">Contact</a>
+    <a href="index.html">About</a>
+    <a href="research.html">Research</a>
+    <a href="publications.html">Publications</a>
+    <a href="contact.html">Contact</a>
 </nav>
 
-<section id="about">
+<section>
     <h2>About Me</h2>
     <div class="about">
-        <img src="profile-image">
+        <img src="profile-image.jpg" alt="Profile Photo">
         <p>
-            I am a researcher working at the intersection of mechanical engineering,
-            glaciology, and polar field instrumentation. My work focuses on Antarctic
-            ice sampling, borehole systems, geophysics, and field engineering in
-            extreme environments.
+            I am a PhD researcher at Swansea University working at the intersection
+            of glaciology, geophysics, and mechanical engineering. My work focuses on
+            ice sampling technologies, field instrumentation, borehole systems, and
+            polar research in Antarctica and Alaska.
         </p>
     </div>
-</section>
-
-<section id="research">
-    <h2>Research</h2>
-    <ul>
-        <li>Rapid ice sampling equipment for Antarctic boreholes</li>
-        <li>Juneau Icefield geophysics and melt processes</li>
-        <li>Hot water drilling and sidewall coring tool development</li>
-    </ul>
-</section>
-
-<section id="publications">
-    <h2>Publications & Presentations</h2>
-    <p>Add journal papers, conference posters, talks, and thesis links here.</p>
-</section>
-
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: jessicamckmac@gmail.com</p>
 </section>
 
 <footer>
