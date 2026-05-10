@@ -144,6 +144,30 @@
             color: #666;
             margin-top: 40px;
         }
+
+        .bottom-image-section {
+            position: relative;
+            width: 100%;
+            height: 420px;          /* controls how much of the image is visible */
+            overflow: hidden;      /* this creates the “cropped bottom” effect */
+            margin-top: 60px;
+        }
+
+        .bottom-image-section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        /* Contact button overlay */
+        .overlay-contact-button {
+            position: absolute;
+            top: 25%;              /* top third of image */
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
     </style>
 </head>
 <body>
@@ -233,9 +257,17 @@
             University of Canterbury, New Zealand
         </p>
 
-        <a href="contact.html" class="contact-button">Contact</a>
     </div>
 </section>
+
+<div class="bottom-image-section">
+
+    <a href="contact.html" class="contact-button overlay-contact-button">
+        Contact
+    </a>
+
+    <img src="side-hagg-radar-image.jpg" alt="Radar Image">
+</div>
 
 <footer>
     <p>© 2026 Jessica MacFarquhar</p>
