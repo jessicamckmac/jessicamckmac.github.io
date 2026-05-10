@@ -18,24 +18,21 @@
             background-size: cover;
             background-position: center;
             text-align: center;
-            padding: 120px 20px;
+            padding: 70px 20px 140px 20px;
         }
 
-        .name {
+        .name a {
             font-size: 3.5em;
             color: #003366;
-            margin-bottom: 10px;
+            text-decoration: none;
+            font-weight: bold;
         }
 
-        .university {
-            font-size: 1.5em;
-            color: white;
-            margin-bottom: 8px;
-        }
-
-        .role {
+        .subtitle {
             font-size: 1.1em;
             color: white;
+            margin-top: 10px;
+            font-weight: normal;
         }
 
         nav {
@@ -61,12 +58,14 @@
             color: #003366;
             border-bottom: 2px solid #ddd;
             padding-bottom: 10px;
+            text-align: center;
         }
 
         .about {
             display: flex;
             gap: 30px;
             align-items: center;
+            margin-bottom: 50px;
         }
 
         .about img {
@@ -76,24 +75,56 @@
             border-radius: 50%;
         }
 
+        .education {
+            text-align: center;
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.8;
+        }
+
+        .education strong {
+            color: #003366;
+            font-size: 1.05em;
+        }
+
+        .contact-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 14px 28px;
+            background-color: #003366;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .contact-button:hover {
+            opacity: 0.9;
+        }
+
         footer {
             background: #f4f4f4;
             text-align: center;
             padding: 20px;
             color: #666;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <div class="name">Jessica MacFarquhar</div>
-    <div class="university">Swansea University</div>
-    <div class="role">PhD Student in Glaciology and Geophysics</div>
+    <div class="name">
+        <a href="index.html">Jessica MacFarquhar</a>
+    </div>
+
+    <div class="subtitle">
+        Swansea University | PhD Student in Glaciology and Geophysics
+    </div>
 </header>
 
 <nav>
-    <a href="index.html">About</a>
+    <a href="index.html">About Me</a>
     <a href="research.html">Research</a>
     <a href="publications.html">Publications</a>
     <a href="contact.html">Contact</a>
@@ -101,14 +132,42 @@
 
 <section>
     <h2>About Me</h2>
+
     <div class="about">
         <img src="profile-image.jpg" alt="Profile Photo">
         <p>
-            I am a PhD researcher at Swansea University working at the intersection
-            of glaciology, geophysics, and mechanical engineering. My work focuses on
-            ice sampling technologies, field instrumentation, borehole systems, and
-            polar research in Antarctica and Alaska.
+            I am a PhD student at Swansea University in the Centre of Expertise for Ice and Climate. My interests are very broad, encompassing geophysics, glaciology, and polar engineering.
+
+            My current focus is on using geophysical methods to understand how a warming climate influences the formation and drainage of melt lakes that form on the surface of glaciers.
+
+            I hold a Bachelors and Masters in Mechanical Engineering from the University of Canterbury where I developed two new, low cost, light weight ice core drills that are designed to operate in hot water boreholes.
+
         </p>
+    </div>
+
+    <h2>Education</h2>
+
+    <div class="education">
+
+        <p>
+            <strong>PhD in Glaciology and Geophysics, in progress</strong><br>
+            Swansea University, United Kingdom<br>
+            Advisory team: Bernd Kulessa, Adrian Luckman, Seth Campbell,
+            Sammie Buzzard, Danny Feltham
+        </p>
+
+        <p>
+            <strong>MEng in Mechanical Engineering, 2025</strong><br>
+            University of Canterbury, New Zealand<br>
+            Advisors: David Prior and Geoff Rodgers
+        </p>
+
+        <p>
+            <strong>BEng (Hons) in Mechanical Engineering, 2023</strong><br>
+            University of Canterbury, New Zealand
+        </p>
+
+        <a href="contact.html" class="contact-button">Contact</a>
     </div>
 </section>
 
