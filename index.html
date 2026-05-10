@@ -8,9 +8,17 @@
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: Aptos, sans-serif;
             color: #222;
             background-color: white;
+        }
+
+        h1, h2, .name a {
+            font-family: "Aptos Display", Aptos, sans-serif;
+        }
+
+        body, p, li, a, div {
+            font-family: Aptos, sans-serif;
         }
 
         header {
@@ -18,7 +26,7 @@
             background-size: cover;
             background-position: center;
             text-align: center;
-            padding: 70px 20px 140px 20px;
+            padding: 40px 20px 140px 20px;
         }
 
         .name a {
@@ -87,6 +95,12 @@
             font-size: 1.05em;
         }
 
+        .thesis-link {
+            color: black;
+            text-decoration: underline;
+            font-weight: normal;
+        }
+
         .contact-button {
             display: inline-block;
             margin-top: 30px;
@@ -115,7 +129,7 @@
 
 <header>
     <div class="name">
-        <a href="index.html">Jessica MacFarquhar</a>
+        <a href="index.html#about">Jessica MacFarquhar</a>
     </div>
 
     <div class="subtitle">
@@ -124,13 +138,13 @@
 </header>
 
 <nav>
-    <a href="index.html">About Me</a>
+    <a href="index.html#about">About Me</a>
     <a href="research.html">Research</a>
     <a href="publications.html">Publications</a>
     <a href="contact.html">Contact</a>
 </nav>
 
-<section>
+<section id="about">
     <h2>About Me</h2>
 
     <div class="about">
@@ -160,6 +174,9 @@
             <strong>MEng in Mechanical Engineering, 2025</strong><br>
             University of Canterbury, New Zealand<br>
             Advisors: David Prior and Geoff Rodgers
+            <a href="https://ir.canterbury.ac.nz/items/ec8742cc-d552-4178-9f6a-c387b28f0a64" target="_blank" class="thesis-link">
+                Design and development of rapid ice sampling equipment for Antarctica
+            </a>
         </p>
 
         <p>
