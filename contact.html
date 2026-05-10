@@ -123,6 +123,44 @@
             color: #666;
             margin-top: 40px;
         }
+
+        .contact-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .contact-text {
+            flex: 1;
+            text-align: left;
+        }
+
+        .contact-image img {
+            width: 320px;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .contact-section {
+                flex-direction: column;
+                text-align: center;
+            }  
+
+            .contact-text {
+                text-align: center;
+            }
+
+            .contact-image img {
+                width: 260px;
+                height: 260px;
+                margin-top: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -147,16 +185,34 @@
 
 <section>
     <h2>Contact</h2>
-    <p>Jessica MacFarquhar</p>
-    <p><strong>Email:</strong> jessicamckmac@gmail.com</p>
-    <p><strong>LinkedIn:</strong>
-        <a href="https://www.linkedin.com/in/jessica-macfarquhar-580b26198/" target="_blank">
-            Jessica MacFarquhar
-        </a></p>
-    <p>Swansea University<br>
-        Singleton Park Campus<br>
-        Swansea, SA2 8PP<br>
-        United Kingdom</p>
+
+    <div class="contact-section">
+
+        <div class="contact-text">
+            <p>
+                <strong>Email:</strong> jessicamckmac@gmail.com
+            </p>
+
+            <p>
+                <strong>LinkedIn:</strong>
+                <a href="https://www.linkedin.com/in/jessica-macfarquhar-580b26198/" target="_blank">
+                    Jessica MacFarquhar
+                </a>
+            </p>
+
+            <p>
+                Swansea University<br>
+                Singleton Park Campus<br>
+                Swansea, SA2 8PP<br>
+                United Kingdom
+            </p>
+        </div>
+
+        <div class="contact-image">
+            <img src="skiing-image.jpg" alt="Skiing image">
+        </div>
+
+    </div>
 </section>
 
 <footer>
