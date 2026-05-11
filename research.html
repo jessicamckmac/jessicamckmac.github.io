@@ -1,136 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jessica MacFarquhar | Home</title>
-    <link rel="icon" type="image/png" href="favicon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jessica MacFarquhar | Research</title>
+<link rel="icon" type="image/png" href="favicon.png">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Aptos, sans-serif;
-            color: #222;
-            background-color: white;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: Aptos, sans-serif;
+    color: #222;
+    background-color: white;
+}
 
-        h1, h2, .name a {
-            font-family: "Aptos Display", Aptos, sans-serif;
-        }
+h1, h2, .name a {
+    font-family: "Aptos Display", Aptos, sans-serif;
+}
 
-        body, p, li, a, div {
-            font-family: Aptos, sans-serif;
-        }
+header {
+    background-image: url('website-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 20px 20px 140px 20px;
+}
 
-        header {
-            background-image: url('website-banner.jpg');
-            background-size: cover;
-            background-position: center;
-            text-align: center;
-            padding: 20px 20px 140px 20px;
-        }
+.name a {
+    font-size: 3.5em;
+    color: #003366;
+    text-decoration: none;
+}
 
-        .name a {
-            font-size: 3.5em;
-            color: #003366;
-            text-decoration: none;
-            font-weight: normal;
-        }
+.subtitle {
+    font-size: 1.1em;
+    color: white;
+}
 
-        .subtitle {
-            font-size: 1.1em;
-            color: white;
-            margin-top: 10px;
-            font-weight: normal;
-        }
+nav {
+    background: #003366;
+    padding: 15px;
+    text-align: center;
+}
 
-        nav {
-            background: #003366;
-            padding: 15px;
-            text-align: center;
-        }
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        nav a {
-            color: white;
-            margin: 0 20px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+    line-height: 1.8;
+}
 
-        section {
-            max-width: 1000px;
-            margin: auto;
-            padding: 40px 20px;
-        }
+h2 {
+    color: #003366;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
 
-        h2 {
-            color: #003366;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 10px;
-            text-align: center;
-        }
+.project-title {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #003366;
+    font-size: 1.15em;
+}
 
-        .about {
-            display: flex;
-            gap: 30px;
-            align-items: center;
-            margin-bottom: 50px;
-        }
-
-        .about img {
-            width: 220px;
-            height: 220px;
-            object-fit: cover;
-            border-radius: 50%;
-        }
-
-        .education {
-            text-align: center;
-            max-width: 700px;
-            margin: auto;
-            line-height: 1.8;
-        }
-
-        .education strong {
-            color: #003366;
-            font-size: 1.05em;
-        }
-
-        .thesis-link {
-            color: black;
-            text-decoration: underline;
-            font-weight: normal;
-        }
-
-        .contact-button {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 14px 28px;
-            background-color: #003366;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-        }
-
-        .contact-button:hover {
-            opacity: 0.9;
-        }
-
-        footer {
-            background: #f4f4f4;
-            text-align: center;
-            padding: 20px;
-            color: #666;
-            margin-top: 40px;
-        }
-    </style>
+footer {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    margin-top: 40px;
+}
+</style>
 </head>
+
 <body>
 
 <header>
     <div class="name">
-        <a href="index.html#about">Jessica MacFarquhar</a>
+        <a href="index.html">Jessica MacFarquhar</a>
     </div>
 
     <div class="subtitle">
@@ -139,57 +94,51 @@
 </header>
 
 <nav>
-    <a href="index.html#about">About Me</a>
+    <a href="index.html">About</a>
     <a href="research.html">Research</a>
     <a href="publications.html">Publications</a>
     <a href="contact.html">Contact</a>
+    <a href="fieldwork.html">Fieldwork</a>
 </nav>
 
 <section>
     <h2>Research Projects</h2>
 
     <p>
-        <strong><u>Ice sheets and glaciers in a warming climate: measurement and modelling of surface melt lakes</u></strong>
+        <span class="project-title">
+            Ice sheets and glaciers in a warming climate: measurement and modelling of surface melt lakes
+        </span>
         <br><br>
 
         <strong>2026–2029.</strong>
-        This project aims to increase our understanding of how surface meltwater lakes form,
-        evolve, and drain in a warming climate. We will study how the combination of varying
-        atmospheric forcings and snowpack properties influence surface lake development, as well
-        as investigating the links between lake drainage and subglacial water storage potential.
-        Site-specific field measurements will be used for model validation to allow for
-        extrapolation across various regions.
+        This project aims to increase our understanding of how surface meltwater lakes form, evolve,
+        and drain in a warming climate. We will study how varying atmospheric forcings and snowpack
+        properties influence surface lake development, and investigate links between lake drainage
+        and subglacial water storage potential.
         <br><br>
 
         This project is funded within the
-        <a href="https://blogs.reading.ac.uk/crocus-dla/" target="_blank">
-            <u>CROCUS Doctoral Landscape Award Scheme</u>
-        </a>
-        and also receives support from the University of Maine Polar Geophysics research team.
+        <a href="https://blogs.reading.ac.uk/crocus-dla/">
+            CROCUS Doctoral Landscape Award Scheme
+        </a>.
     </p>
 
     <br><br>
 
     <p>
-        <strong><u>Tere Tīpako Tio: Rapid Extensive Ice Sampling Aotearoa</u></strong>
+        <span class="project-title">
+            Tere Tīpako Tio: Rapid Extensive Ice Sampling Aotearoa
+        </span>
         <br><br>
 
         <strong>2022–2025.</strong>
-        The goal of this project was to develop new low-cost, lightweight, easy-to-deploy ice
-        sampling equipment. The advent of these instruments will, over time, make a step change
-        in the ability of the scientific and geotechnical community to collect ice physical
-        property data to improve the quality of ice sheet modelling, reducing uncertainty in
-        projections.
+        The goal of this project was to develop new low-cost, lightweight, easy-to-deploy
+        ice sampling equipment for Antarctic boreholes.
         <br><br>
 
-        This project was funded by New Zealand’s Ministry of Business, Innovation and Employment
-        (MBIE) as part of the 2022 Smart Ideas scheme. The principal investigator for
-        Tere Tīpako Tio was David Prior, based in the Geology Department at the University of Otago.
-        <br><br>
-
-        Learn more here:
-        <a href="https://www.facebook.com/priestleyglacierteam/" target="_blank">
-            <u>Stretching Ice to the Limit Facebook Page</u>
+        Learn more:
+        <a href="https://www.facebook.com/priestleyglacierteam/">
+            Stretching Ice to the Limit Facebook Page
         </a>
     </p>
 </section>

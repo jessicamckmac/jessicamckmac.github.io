@@ -1,159 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jessica MacFarquhar | Home</title>
-    <link rel="icon" type="image/png" href="favicon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jessica MacFarquhar | Contact</title>
+<link rel="icon" type="image/png" href="favicon.png">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Aptos, sans-serif;
-            color: #222;
-            background-color: white;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: Aptos, sans-serif;
+    color: #222;
+}
 
-        h1, h2, .name a {
-            font-family: "Aptos Display", Aptos, sans-serif;
-        }
+h1, h2, .name a {
+    font-family: "Aptos Display", Aptos, sans-serif;
+}
 
-        body, p, li, a, div {
-            font-family: Aptos, sans-serif;
-        }
+header {
+    background-image: url('website-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 20px 20px 140px 20px;
+}
 
-        header {
-            background-image: url('website-banner.jpg');
-            background-size: cover;
-            background-position: center;
-            text-align: center;
-            padding: 20px 20px 140px 20px;
-        }
+.name a {
+    font-size: 3.5em;
+    color: #003366;
+    text-decoration: none;
+}
 
-        .name a {
-            font-size: 3.5em;
-            color: #003366;
-            text-decoration: none;
-            font-weight: normal;
-        }
+.subtitle {
+    font-size: 1.1em;
+    color: white;
+}
 
-        .subtitle {
-            font-size: 1.1em;
-            color: white;
-            margin-top: 10px;
-            font-weight: normal;
-        }
+nav {
+    background: #003366;
+    padding: 15px;
+    text-align: center;
+}
 
-        nav {
-            background: #003366;
-            padding: 15px;
-            text-align: center;
-        }
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        nav a {
-            color: white;
-            margin: 0 20px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
 
-        section {
-            max-width: 1000px;
-            margin: auto;
-            padding: 40px 20px;
-        }
+h2 {
+    color: #003366;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    text-align: center;
+}
 
-        h2 {
-            color: #003366;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 10px;
-            text-align: center;
-        }
+.contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
 
-        .about {
-            display: flex;
-            gap: 30px;
-            align-items: center;
-            margin-bottom: 50px;
-        }
+.contact-text {
+    flex: 1;
+    line-height: 2;
+}
 
-        .about img {
-            width: 220px;
-            height: 220px;
-            object-fit: cover;
-            border-radius: 50%;
-        }
+.contact-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
 
-        .education {
-            text-align: center;
-            max-width: 700px;
-            margin: auto;
-            line-height: 1.8;
-        }
-
-        .education strong {
-            color: #003366;
-            font-size: 1.05em;
-        }
-
-        .thesis-link {
-            color: black;
-            text-decoration: underline;
-            font-weight: normal;
-        }
-
-        .contact-button {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 14px 28px;
-            background-color: #003366;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-        }
-
-        .contact-button:hover {
-            opacity: 0.8;
-        }
-
-        footer {
-            background: #f4f4f4;
-            text-align: center;
-            padding: 20px;
-            color: #666;
-            margin-top: 40px;
-        }
-
-        .contact-section {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        .contact-text {
-            flex: 1;
-            text-align: left;
-        }
-
-        .contact-image img {
-            width: 300px;
-            height: 400px;
-            object-fit: contain;
-            border-radius: 10px;
-        }
-
-    
-    </style>
+footer {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    margin-top: 40px;
+}
+</style>
 </head>
+
 <body>
 
 <header>
     <div class="name">
-        <a href="index.html#about">Jessica MacFarquhar</a>
+        <a href="index.html">Jessica MacFarquhar</a>
     </div>
 
     <div class="subtitle">
@@ -162,12 +103,12 @@
 </header>
 
 <nav>
-    <a href="index.html#about">About Me</a>
+    <a href="index.html">About</a>
     <a href="research.html">Research</a>
     <a href="publications.html">Publications</a>
     <a href="contact.html">Contact</a>
+    <a href="fieldwork.html">Fieldwork</a>
 </nav>
-
 
 <section>
     <h2>Contact</h2>
@@ -175,13 +116,11 @@
     <div class="contact-section">
 
         <div class="contact-text">
-            <p>
-                <strong>Email:</strong> jessicamckmac@gmail.com
-            </p>
+            <p><strong>Email:</strong> jessicamckmac@gmail.com</p>
 
             <p>
                 <strong>LinkedIn:</strong>
-                <a href="https://www.linkedin.com/in/jessica-macfarquhar-580b26198/" target="_blank">
+                <a href="https://www.linkedin.com/in/jessica-macfarquhar-580b26198/">
                     Jessica MacFarquhar
                 </a>
             </p>
@@ -195,7 +134,7 @@
         </div>
 
         <div class="contact-image">
-            <img src="skiing-image.jpg" alt="Skiing image">
+            <img src="skiing-image.jpg" alt="Skiing photo">
         </div>
 
     </div>

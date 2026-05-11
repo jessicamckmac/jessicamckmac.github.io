@@ -1,277 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jessica MacFarquhar | Home</title>
-    <link rel="icon" type="image/png" href="favicon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jessica MacFarquhar | Home</title>
+<link rel="icon" type="image/png" href="favicon.png">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Aptos, sans-serif;
-            color: #222;
-            background-color: white;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: Aptos, sans-serif;
+    color: #222;
+    background-color: white;
+}
 
-        h1, h2, .name a {
-            font-family: "Aptos Display", Aptos, sans-serif;
-        }
+h1, h2, .name a {
+    font-family: "Aptos Display", Aptos, sans-serif;
+}
 
-        body, p, li, a, div {
-            font-family: Aptos, sans-serif;
-        }
+header {
+    background-image: url('website-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 20px 20px 140px 20px;
+}
 
-        header {
-            background-image: url('website-banner.jpg');
-            background-size: cover;
-            background-position: center;
-            text-align: center;
-            padding: 20px 20px 140px 20px;
-        }
+.name a {
+    font-size: 3.5em;
+    color: #003366;
+    text-decoration: none;
+}
 
-        .name a {
-            font-size: 3.5em;
-            color: #003366;
-            text-decoration: none;
-            font-weight: normal;
-        }
+.subtitle {
+    font-size: 1.1em;
+    color: white;
+}
 
-        .subtitle {
-            font-size: 1.1em;
-            color: white;
-            margin-top: 10px;
-            font-weight: normal;
-        }
+nav {
+    background: #003366;
+    padding: 15px;
+    text-align: center;
+}
 
-        nav {
-            background: #003366;
-            padding: 15px;
-            text-align: center;
-        }
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        nav a {
-            color: white;
-            margin: 0 20px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
 
-        section {
-            max-width: 1000px;
-            margin: auto;
-            padding: 40px 20px;
-        }
+h2 {
+    color: #003366;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
 
-        h2 {
-            color: #003366;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 10px;
-            text-align: center;
-        }
+.about {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
 
-        .about {
-            display: flex;
-            gap: 30px;
-            align-items: center;
-            margin-bottom: 50px;
-        }
+.about img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+}
 
-        .about img {
-            width: 220px;
-            height: 220px;
-            object-fit: cover;
-            border-radius: 50%;
-        }
+/* RESEARCH GROUP SECTION */
+.team-section {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
 
-        .team-section {
-            display: flex;
-            gap: 30px;
-            align-items: center;
-            margin-bottom: 50px;
-        }
+.team-text {
+    flex: 1;
+    line-height: 1.7;
+}
 
-        .team-text {
-            flex: 1;
-            text-align: left;
-            line-height: 1.7;
-        }
+.team-logo img {
+    width: 220px;
+    height: 220px;
+    object-fit: contain;
+}
 
-        .team-logo img {
-            width: 220px;
-            height: 220px;
-            object-fit: contain;
-            border-radius: 50%;
-            background-color: white;
-        }
+/* EDUCATION */
+.education {
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+}
 
-        .education {
-            text-align: center;
-            max-width: 700px;
-            margin: auto;
-            margin-bottom: 20px;
-            line-height: 1.8;
-        }
+.thesis-link {
+    color: black;
+    text-decoration: underline;
+}
 
-        .education strong {
-            color: #003366;
-            font-size: 1.05em;
-        }
+/* CONTACT BUTTON */
+.contact-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 28px;
+    background: #003366;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
 
-        .thesis-link {
-            color: black;
-            text-decoration: underline;
-            font-weight: normal;
-        }
+.bottom-image {
+    margin-top: 60px;
+    position: relative;
+}
 
-        .contact-button {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 14px 28px;
-            background-color: #003366;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-        }
+.bottom-image img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
 
-        .contact-button:hover {
-            opacity: 0.8;
-        }
-
-        footer {
-            background: #f4f4f4;
-            text-align: center;
-            padding: 20px;
-            color: #666;
-            margin-top: 40px;
-        }
-
-        .bottom-image-section {
-            position: relative;
-            width: 100%;
-            margin-top: 60px;
-        }
-
-        .bottom-image-section img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-        }
-
-        /* Contact button overlay */
-        .overlay-contact-button {
-            position: absolute;
-            top: 15%;             
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 2;
-        }
-    </style>
+.overlay-button {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+</style>
 </head>
+
 <body>
 
 <header>
     <div class="name">
-        <a href="index.html#about">Jessica MacFarquhar</a>
+        <a href="index.html">Jessica MacFarquhar</a>
     </div>
-
     <div class="subtitle">
         Swansea University | PhD Student in Glaciology and Geophysics
     </div>
 </header>
 
 <nav>
-    <a href="index.html#about">About Me</a>
+    <a href="index.html">About</a>
     <a href="research.html">Research</a>
     <a href="publications.html">Publications</a>
     <a href="contact.html">Contact</a>
+    <a href="fieldwork.html">Fieldwork</a>
 </nav>
 
 <section id="about">
-    <h2>About Me</h2>
 
-    <div class="about">
-        <img src="profile-image.jpg" alt="Profile Photo">
-        <p>
-            I am a PhD student at Swansea University in the Centre of Expertise for Ice and Climate.
-            My interests are very broad, encompassing geophysics, glaciology, and polar engineering.
+<h2>About Me</h2>
 
-            My current focus is on using geophysical methods to understand how a warming climate
-            influences the formation and drainage of melt lakes that form on the surface of glaciers.
-
-            I hold a Bachelors and Masters in Mechanical Engineering from the University of Canterbury
-            where I developed two new, low cost, light weight ice core drills that are designed to
-            operate in hot water boreholes.
-        </p>
-    </div>
-
-    <h2>Research Group</h2>
-
-    <div class="team-section">
-        <div class="team-text">
-            <p>
-                Our Swansea University team at the Centre of Expertise for Ice and Climate is
-                multidisciplinary with focus areas that include remote sensing,
-                computational modelling, and geophysics.
-
-                We have several very exciting projects coming up, including
-                <a href="https://gtr.ukri.org/projects?ref=NE%2FR010838%2F1" class="thesis-link">
-                    Impact of deep subglacial groundwater on ice stream flow in West Antarctica (IGIS)
-                </a>,
-                led by Bernd Kulessa.
-
-                This project will investigate how groundwater stored in sediments beneath
-                Antarctic ice streams influences ice flow, subglacial hydrology, and the
-                future stability of ice sheets.
-            </p>
-        </div>
-
-        <div class="team-logo">
-            <img src="CoX-logo.jpg" alt="Centre of Expertise for Ice and Climate Logo">
-        </div>
-    </div>
-
-    <h2>Education</h2>
-
-    <div class="education">
-        <p>
-            <strong>PhD in Glaciology and Geophysics, in progress</strong><br>
-            Swansea University, United Kingdom<br>
-            Advisory team: Bernd Kulessa, Adrian Luckman, Seth Campbell,
-            Sammie Buzzard, Danny Feltham
-        </p>
-
-        <p>
-            <strong>MEng in Mechanical Engineering, 2025</strong><br>
-            <a href="https://ir.canterbury.ac.nz/items/ec8742cc-d552-4178-9f6a-c387b28f0a64" class="thesis-link">
-                Design and development of rapid ice sampling equipment for Antarctica
-            </a><br>
-            University of Canterbury, New Zealand<br>
-            Advisors: David Prior and Geoff Rodgers
-        </p>
-
-        <p>
-            <strong>BEng (Hons) in Mechanical Engineering, 2023</strong><br>
-            University of Canterbury, New Zealand
-        </p>
-
-    </div>
-</section>
-
-<div class="bottom-image-section">
-
-    <a href="contact.html" class="contact-button overlay-contact-button">
-        Contact
-    </a>
-
-    <img src="side-hagg-radar-image.JPG" alt="Radar Image">
+<div class="about">
+    <img src="profile-image.jpg">
+    <p>
+        I am a PhD student at Swansea University...
+    </p>
 </div>
 
-<footer>
-    <p>© 2026 Jessica MacFarquhar</p>
-</footer>
+<h2>Research Group</h2>
+
+<div class="team-section">
+
+    <div class="team-text">
+        <p>
+            Our Swansea University team at the Centre of Expertise for Ice and Climate...
+        </p>
+
+        <p>
+            <a href="https://gtr.ukri.org/projects?ref=NE%2FR010838%2F1">
+                Impact of deep subglacial groundwater...
+            </a>
+        </p>
+    </div>
+
+    <div class="team-logo">
+        <img src="CoX-logo.jpg">
+    </div>
+</div>
+
+<h2>Education</h2>
+
+<div class="education">
+    <p><strong>PhD in Glaciology and Geophysics</strong> Swansea University</p>
+
+    <p>
+        <strong>MEng in Mechanical Engineering</strong><br>
+        <a class="thesis-link" href="https://ir.canterbury.ac.nz/items/ec8742cc-d552-4178-9f6a-c387b28f0a64">
+            Design and development of rapid ice sampling equipment for Antarctica
+        </a>
+    </p>
+</div>
+
+</section>
+
+<div class="bottom-image">
+    <img src="side-hagg-radar-image.JPG">
+    <a class="contact-button overlay-button" href="contact.html">Contact</a>
+</div>
 
 </body>
 </html>
