@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jessica MacFarquhar | Fieldwork</title>
+    <title>Jessica MacFarquhar | Home</title>
     <link rel="icon" type="image/png" href="favicon.png">
 
     <style>
@@ -18,12 +18,16 @@
             font-family: "Aptos Display", Aptos, sans-serif;
         }
 
+        body, p, li, a, div {
+            font-family: Aptos, sans-serif;
+        }
+
         header {
             background-image: url('website-banner.jpg');
             background-size: cover;
             background-position: center;
             text-align: center;
-            padding: 60px 20px 120px 20px;
+            padding: 20px 20px 140px 20px;
         }
 
         .name a {
@@ -37,6 +41,7 @@
             font-size: 1.1em;
             color: white;
             margin-top: 10px;
+            font-weight: normal;
         }
 
         nav {
@@ -55,8 +60,7 @@
         section {
             max-width: 1000px;
             margin: auto;
-            padding: 20px 20px 40px 20px;
-            line-height: 1.8;
+            padding: 40px 20px;
         }
 
         h2 {
@@ -66,19 +70,73 @@
             text-align: center;
         }
 
-        .field-location {
-            font-weight: bold;
-            text-decoration: underline;
+        .about {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        .about img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .team-section {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        .team-text {
+            flex: 1;
+            text-align: left;
+            line-height: 1.7;
+        }
+
+        .team-logo img {
+            width: 220px;
+            height: 220px;
+            object-fit: contain;
+            border-radius: 50%;
+            background-color: white;
+        }
+
+        .education {
+            text-align: center;
+            max-width: 700px;
+            margin: auto;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .education strong {
             color: #003366;
-            font-size: 1.15em;
+            font-size: 1.05em;
         }
 
-        .field-block {
-            margin-bottom: 45px;
-        }
-
-        a {
+        .thesis-link {
             color: black;
+            text-decoration: underline;
+            font-weight: normal;
+        }
+
+        .contact-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 14px 28px;
+            background-color: #003366;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .contact-button:hover {
+            opacity: 0.8;
         }
 
         footer {
@@ -89,15 +147,26 @@
             margin-top: 40px;
         }
 
-        @media (max-width: 768px) {
-            .name a {
-                font-size: 2.2em;
-            }
+        .bottom-image-section {
+            position: relative;
+            width: 100%;
+            margin-top: 60px;
+        }
 
-            nav a {
-                display: block;
-                margin: 10px 0;
-            }
+        .bottom-image-section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        /* Contact button overlay */
+        .overlay-contact-button {
+            position: absolute;
+            top: 15%;             
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
         }
     </style>
 </head>
@@ -120,20 +189,13 @@
     <a href="publications.html">Publications</a>
     <a href="contact.html">Contact</a>
 </nav>
-
 <section>
     <h2>Fieldwork</h2>
 
     <div class="field-block">
         <p class="field-location">Juneau Icefield, Alaska</p>
         <p>
-            I will be heading to Juneau Icefield in Alaska to join the Juneau Icefield
-            Research Program (JIRP) as a visiting researcher. During my time on the
-            Icefield I will be investigating supraglacial lakes that form at the lateral
-            margins of the Taku Glacier using multiple geophysical methods. I will also
-            be providing hot water drilling support to other research projects across the
-            Icefield. This research will be conducted on the lands of the Tlingit peoples,
-            past and present.
+            I will be heading to Juneau Icefield in Alaska to join the Juneau Icefield Research Program (JIRP) as a visiting researcher. During my time on the Icefield, I will be investigating supraglacial lakes that form at the lateral margins of the Taku Glacier using multiple geophysical methods. I will also be providing hot water drilling support to other research projects across the Icefield. This research will be conducted on the lands of the Tlingit peoples, past and present.
         </p>
     </div>
 
